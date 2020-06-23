@@ -1,0 +1,40 @@
+{
+	"name": "catalin-ionut/profitshare-client",
+	"type": "library",
+	"description": "Profitshare modern client to consume the profitshare API.",
+	"keywords": [
+		"profitshare",
+		"api"
+	],
+	"homepage": "https://github.com/Catalin-Ionut/profitshare-client",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Catalin Ionut Titov",
+			"email": "catalin.titov@gmail.com",
+			"homepage": "https://titov.ro/",
+			"role": "PHP Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"ProfitshareClient\\": "src/"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"require": {
+		"php": ">=7.2.5",
+		"ext-curl": "*",
+		"ext-json": "*",
+		"netresearch/jsonmapper": "^2.1",
+		"symfony/http-client": "^5.1"
+	},
+	"scripts": {
+		"analyse": "vendor/bin/phpstan analyse -c phpstan.neon"
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^0.12.30"
+	}
+}
