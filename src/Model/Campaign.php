@@ -33,4 +33,14 @@ class Campaign
      * @var string
      */
     public $url;
+
+    /**
+     * @var int
+     */
+    public $advertiser_id;
+
+    /**
+     * @var array
+     */
+    public $banners;
 }

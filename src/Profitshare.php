@@ -40,7 +40,7 @@ class Profitshare
 
     private function initializeHttpClient(): void
     {
-        if (!isset($this->httpClient)) {
+        if ($this->httpClient === null) {
             $this->httpClient = HttpClient::createForBaseUri(self::API_URL);
         }
     }

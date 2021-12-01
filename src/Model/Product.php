@@ -43,4 +43,14 @@ class Product
      * @var float
      */
     public $price_vat;
+
+    /**
+     * @var float
+     */
+    public $price_discounted;
+
+    /**
+     * @var string
+     */
+    public $affiliate_link;
 }
